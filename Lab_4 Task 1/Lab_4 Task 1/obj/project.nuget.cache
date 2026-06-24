@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jOZ6oWzZbZQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\zombi\\source\\repos\\Lab_4 Task 1\\Lab_4 Task 1\\Lab_4 Task 1.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zombi\\.nuget\\packages\\fsharp.core\\9.0.303\\fsharp.core.9.0.303.nupkg.sha512"
+  ],
+  "logs": []
+}

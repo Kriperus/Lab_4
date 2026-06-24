@@ -1,0 +1,29 @@
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\bin\Debug\net8.0\Lab_4 Task 2.exe
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\bin\Debug\net8.0\Lab_4 Task 2.deps.json
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\bin\Debug\net8.0\Lab_4 Task 2.runtimeconfig.json
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\bin\Debug\net8.0\Lab_4 Task 2.dll
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\bin\Debug\net8.0\Lab_4 Task 2.pdb
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\bin\Debug\net8.0\FSharp.Core.dll
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\bin\Debug\net8.0\cs\FSharp.Core.resources.dll
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\bin\Debug\net8.0\de\FSharp.Core.resources.dll
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\bin\Debug\net8.0\es\FSharp.Core.resources.dll
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\bin\Debug\net8.0\fr\FSharp.Core.resources.dll
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\bin\Debug\net8.0\it\FSharp.Core.resources.dll
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\bin\Debug\net8.0\ja\FSharp.Core.resources.dll
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\bin\Debug\net8.0\ko\FSharp.Core.resources.dll
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\bin\Debug\net8.0\pl\FSharp.Core.resources.dll
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\bin\Debug\net8.0\pt-BR\FSharp.Core.resources.dll
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\bin\Debug\net8.0\ru\FSharp.Core.resources.dll
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\bin\Debug\net8.0\tr\FSharp.Core.resources.dll
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\bin\Debug\net8.0\zh-Hans\FSharp.Core.resources.dll
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\bin\Debug\net8.0\zh-Hant\FSharp.Core.resources.dll
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\obj\Debug\net8.0\Lab_4 Task 2.fsproj.AssemblyReference.cache
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\obj\Debug\net8.0\Lab_4 Task 2.AssemblyInfoInputs.cache
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\obj\Debug\net8.0\Lab_4 Task 2.AssemblyInfo.fs
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\obj\Debug\net8.0\Lab_4 Task 2.fsproj.CoreCompileInputs.cache
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\obj\Debug\net8.0\Lab_4 Ta.1334FDAD.Up2Date
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\obj\Debug\net8.0\Lab_4 Task 2.dll
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\obj\Debug\net8.0\refint\Lab_4 Task 2.dll
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\obj\Debug\net8.0\Lab_4 Task 2.pdb
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\obj\Debug\net8.0\Lab_4 Task 2.genruntimeconfig.cache
+C:\Users\zombi\source\repos\Lab_4 Task 2\Lab_4 Task 2\obj\Debug\net8.0\ref\Lab_4 Task 2.dll
