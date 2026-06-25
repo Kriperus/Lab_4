@@ -1,4 +1,4 @@
-﻿open System
+open System
 
 type 'T Btree =
     | Node of 'T * 'T Btree * 'T Btree
@@ -6,11 +6,13 @@ type 'T Btree =
 
 [<EntryPoint>]
 let main args =
+    // Функция для инфиксного обхода
     let infix root left right =
         left ()
         root ()
         right ()
 
+    // Итеративный обход дерева с высотой
     let iterh trav f t =
         let rec tr t h =
             match t with
@@ -22,24 +24,74 @@ let main args =
             | Nil -> ()
         tr t 0
 
+    // Создание отступов для отображения уровня
     let spaces n =
         List.fold (fun s _ -> s + "    ") "" [ 0..n ]
 
+    // Вывод дерева с отображением уровней
     let printTree t =
         printfn "\nСтруктура дерева:"
         printfn "Уровень | Значение"
         printfn "--------+----------"
         iterh infix (fun x h -> printfn "   %d    | %s%O" h (spaces h) x) t
 
-    // Вставка элемента в бинарное дерево поиска
-    let rec insert t x =
+    // Вспомогательные функции для AVL-дерева
+    let height tree =
+        let rec h t =
+            match t with
+            | Nil -> 0
+            | Node (_, L, R) -> 1 + max (h L) (h R)
+        h tree
+
+    let balanceFactor tree =
+        match tree with
+        | Nil -> 0
+        | Node (_, L, R) -> height L - height R
+
+    // Повороты для балансировки
+    let rotateRight tree =
+        match tree with
+        | Node (x, Node (y, yLeft, yRight), right) ->
+            Node (y, yLeft, Node (x, yRight, right))
+        | _ -> tree
+
+    let rotateLeft tree =
+        match tree with
+        | Node (x, left, Node (y, yLeft, yRight)) ->
+            Node (y, Node (x, left, yLeft), yRight)
+        | _ -> tree
+
+    // Балансировка дерева
+    let balance tree =
+        match tree with
+        | Nil -> Nil
+        | Node (x, L, R) ->
+            let bf = balanceFactor tree
+            if bf > 1 then
+                if balanceFactor L < 0 then
+                    Node (x, rotateLeft L, R) |> rotateRight
+                else
+                    rotateRight tree
+            elif bf < -1 then
+                if balanceFactor R > 0 then
+                    Node (x, L, rotateRight R) |> rotateLeft
+                else
+                    rotateLeft tree
+            else
+                tree
+
+    // Вставка в AVL-дерево с балансировкой
+    let rec insertAVL t x =
         match t with
         | Nil -> Node(x, Nil, Nil)
         | Node(z, L, R) ->
             if x < z then
-                Node(z, insert L x, R)
+                Node(z, insertAVL L x, R) |> balance
+            elif x > z then
+                Node(z, L, insertAVL R x) |> balance
             else
-                Node(z, L, insert R x)
+                t
+        |> balance
 
     // Функция map для дерева
     let rec treeMap f tree =
@@ -60,10 +112,12 @@ let main args =
     let randomValues = generateRandomList count
     printfn "\nИсходный список целых чисел: %A" randomValues
 
-    // Построение исходного дерева
-    let integerTree = randomValues |> List.fold insert Nil
-    printfn "\nИсходное дерево целых чисел:"
+    // Построение сбалансированного AVL-дерева
+    let integerTree = randomValues |> List.fold insertAVL Nil
+    printfn "\nСбалансированное AVL-дерево целых чисел:"
     printTree integerTree
+
+    printfn $"\nВысота дерева: {height integerTree}"
 
     printfn "\nВведите делитель для преобразования в вещественные числа:"
     let divisor = Console.ReadLine() |> Convert.ToDouble
